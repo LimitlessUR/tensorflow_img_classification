@@ -1,10 +1,18 @@
-.App {
-  text-align: center;
+Body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  background: rgb(20, 19, 20);
+  font-size: 27px;
+  padding: 5px 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +21,71 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputholder {
+  margin: 15px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.MainWrapper {
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imageHolder {
+  width: 60%;
+  display: block;
+  flex: 0 0 60%;
+  max-width: 900px;
+  height: 27vmin;
+
 }
+
+.resultsHolder {
+  padding: 30px;
+}
+
+.button {
+  padding: 12px 17px;
+  font-size: 18px;
+  background: rgb(34, 11, 241);
+  color: #fff;
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.result {
+  border: 1px solid #333;
+  margin: 0 0 10px;
+  padding: 10px;
+
+}
+
+  .name {
+    color: rgb(15, 14, 14);
+  }
+
+  .confidence {
+    color: #1a0e0e;
+  }
+
+
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .confidence {
+    display: block;
+    font-weight: 300;
+  }
+
+  .bestGuess {
+    background: rgba(17, 16, 16, 0);
+    text-decoration-color: rgb(17, 16, 16);
+    padding: 2px 6px;
+    color: #333;
+    margin-left: 3px;
+  }
